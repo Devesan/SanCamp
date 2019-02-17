@@ -72,8 +72,11 @@ app.use(commentsRoutes);
 app.use(campgroundRoutes);
 
 
-
-
-app.listen(3000, function() {
-  console.log("Sancamp  has started");
+app.listen(process.env.PORT, process.env.IP, function(){
+   console.log("The Sancamp Server Has Started!");
 });
+
+//
+// app.listen(3000, function() {
+//   console.log("Sancamp  has started");
+// });
