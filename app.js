@@ -20,7 +20,7 @@ var commentsRoutes = require("./routes/comments"),
 // var url = process.env.DATABASEURL || "mongodb://localhost/Yelpcamp";
 // mongoose.connect(url);
 
-mongoose.connect("mongodb://localhost/Sancamp", { useNewUrlParser: true });
+mongoose.connect("mongodb+srv://Devesan:Devesan%4017@cluster0-0u07d.mongodb.net/San_camp?retryWrites=true");
 
 app.set("view engine", "ejs");
 app.use(express.static(__dirname+"/public"));
