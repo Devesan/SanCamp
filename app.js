@@ -20,7 +20,8 @@ var commentsRoutes = require("./routes/comments"),
 // var url = process.env.DATABASEURL || "mongodb://localhost/Yelpcamp";
 // mongoose.connect(url);
 
-mongoose.connect("mongodb+srv://Devesan:Devesan%4017@cluster0-0u07d.mongodb.net/San_camp?retryWrites=true");
+//mongoose.connect("mongodb://localhost/Sancamp", { useNewUrlParser: true });
+mongoose.connect("mongodb+srv://myuser:myuser123@cluster0-ekp9r.mongodb.net/Sancamp?retryWrites=true");
 
 app.set("view engine", "ejs");
 app.use(express.static(__dirname+"/public"));
@@ -73,6 +74,7 @@ app.use(campgroundRoutes);
 
 
 app.listen(process.env.PORT, process.env.IP, function(){
+// app.listen(3000, function(){
    console.log("The Sancamp Server Has Started!");
 });
 
